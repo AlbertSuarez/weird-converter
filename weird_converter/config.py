@@ -1,4 +1,5 @@
 EXTENSION_IMAGE: str = 'png'
+EXTENSION_AUDIO: str = 'wav'
 
 TEST_FOLDER_DATA: str = 'data'
 TEST_FOLDER_EXAMPLES: str = 'examples'

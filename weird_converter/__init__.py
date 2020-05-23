@@ -11,6 +11,7 @@ def audio_to_image(input_file_path: str, output_file_path: str = None) -> str:
     :return: File path pointing to the generated output image.
     """
     verifier.must_file_exist(input_file_path)
+    verifier.is_audio(input_file_path)
     output_file_path: str = file_manager.generate_file_path(input_file_path, EXTENSION_IMAGE, output_file_path)
     verifier.must_not_directory_exist(output_file_path)
     return audio.to_image(input_file_path, output_file_path)

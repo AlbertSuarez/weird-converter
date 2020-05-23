@@ -1,5 +1,7 @@
 import os
 
+from weird_converter.config import EXTENSION_AUDIO
+
 
 def must_file_exist(path: str):
     """
@@ -15,7 +17,17 @@ def must_not_directory_exist(path: str):
     """
     Checks if a given path points to an existing directory.
     :param path: Given path.
-    :return: True if the the path points to an existing directory, False otherwise.
+    :return: True if the path points to an existing directory, False otherwise.
     """
     if os.path.isdir(path):
         raise IsADirectoryError(f'Directory with path [{path}] must not exist.')
+
+
+def is_audio(path: str):
+    """
+    Checks if a given path points to a valid audio file.
+    :param path: Given path.
+    :return: True if the path points to an audio file, False otherwise.
+    """
+    if os.path.splitext(os.path.basename(path))[-1].lower() != f'.{EXTENSION_AUDIO}':
+        raise ValueError(f'File with path [{path}] is not a {EXTENSION_AUDIO} type of file.')
