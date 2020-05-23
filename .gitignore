@@ -135,3 +135,7 @@ dmypy.json
 
 # Mac
 .DS_Store
+
+# Data
+data
+!data/.gitkeep
