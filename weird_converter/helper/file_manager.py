@@ -14,5 +14,5 @@ def generate_file_path(input_file_path: str, file_extension: str, output_file_pa
     else:
         return os.path.join(
             os.path.dirname(input_file_path),
-            f'{os.path.splitext(os.path.basename(output_file_path))[0]}.{file_extension}'
+            f'{os.path.splitext(os.path.basename(input_file_path))[0]}.{file_extension}'
         )
