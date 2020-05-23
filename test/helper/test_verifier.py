@@ -1,14 +1,14 @@
 import os
 import unittest
 
-from weird_converter.config import TEST_FOLDER_EXAMPLES, TEST_FILE_AUDIO, TEST_FOLDER_DATA
+from weird_converter.config import TEST_FOLDER_EXAMPLES, TEST_FILE_AUDIO, TEST_FOLDER_DATA, TEST_FOLDER_AUDIO
 from weird_converter.helper import verifier
 
 
 class HelperVerifierTest(unittest.TestCase):
 
     def setUp(self):
-        self.existing_file_path: str = os.path.join(TEST_FOLDER_EXAMPLES, TEST_FILE_AUDIO)
+        self.existing_file_path: str = os.path.join(TEST_FOLDER_EXAMPLES, TEST_FOLDER_AUDIO, TEST_FILE_AUDIO)
         self.non_existing_file_path: str = os.path.join(TEST_FOLDER_DATA, TEST_FILE_AUDIO)
         self.directory_path: str = TEST_FOLDER_EXAMPLES
 

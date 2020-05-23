@@ -1,14 +1,15 @@
 import os
 import unittest
 
-from weird_converter.config import TEST_FOLDER_EXAMPLES, TEST_FILE_AUDIO, TEST_FOLDER_DATA, TEST_FILE_IMAGE
+from weird_converter.config import TEST_FOLDER_EXAMPLES, TEST_FILE_AUDIO, TEST_FOLDER_DATA, TEST_FILE_IMAGE, \
+    TEST_FOLDER_AUDIO
 from weird_converter.converter import audio
 
 
 class ConverterAudioTest(unittest.TestCase):
 
     def setUp(self):
-        self.input_file_path: str = os.path.join(TEST_FOLDER_EXAMPLES, TEST_FILE_AUDIO)
+        self.input_file_path: str = os.path.join(TEST_FOLDER_EXAMPLES, TEST_FOLDER_AUDIO, TEST_FILE_AUDIO)
         self.output_file_path_image: str = os.path.join(TEST_FOLDER_DATA, TEST_FILE_IMAGE)
 
     def test_to_image(self):
