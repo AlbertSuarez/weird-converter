@@ -15,7 +15,10 @@ def to_image(input_file_path: str, output_file_path: str) -> str:
     :return: File path pointing to the generated output image.
     """
     # Read WAV file for converting into a numpy array
-    fs, data = wavfile.read(input_file_path)
+    try:
+        fs, data = wavfile.read(input_file_path)
+    except ValueError:
+        raise ValueError('Parsing could not be possible maybe because it is not an audio. Try again with another file.')
 
     # Copying data to a new non-read-only numpy array
     audio_array = np.empty_like(data)
