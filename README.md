@@ -33,8 +33,8 @@ weird_converter.audio_to_image('audio.wav')  # It only supports wav files, for n
 ## Future development
 
 * 🎶 Support other input audio types.
-* 📷 Implement image to audio conversion.
 * 📹 Implement audio to video conversion (and the same other way around).
+* ⭐️ Implement custom transformations for getting different results.
 
 ## Results
 
