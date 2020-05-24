@@ -16,3 +16,7 @@ class ConverterAudioTest(unittest.TestCase):
         output_file_path: str = audio.to_image(self.input_file_path, self.output_file_path_image)
         self.assertIsNotNone(output_file_path)
         self.assertEqual(output_file_path, self.output_file_path_image)
+
+    def test_to_image_error(self):
+        with self.assertRaises(ValueError):
+            audio.to_image(self.output_file_path_image, self.output_file_path_image)

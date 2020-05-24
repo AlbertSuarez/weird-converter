@@ -1,6 +1,4 @@
 import math
-
-from functools import reduce
 import numpy as np
 
 from PIL import Image
@@ -27,7 +25,7 @@ def to_image(input_file_path: str, output_file_path: str) -> str:
     image_dimensions = int(math.sqrt(audio_array.size / 3))  # Compute ideal image dimensions
     amount_values = pow(image_dimensions, 2) * 3  # Compute needed values from audio array
 
-    audio_array = audio_array.reshape(reduce(lambda x, y: x * y, audio_array.shape))  # Flatten audio array
+    audio_array = audio_array.reshape(audio_array.size)  # Flatten audio array
     audio_array = np.random.choice(audio_array, size=amount_values)  # Get the needed amount values
     audio_array = audio_array.reshape(image_dimensions, image_dimensions, 3)  # Reshape to the image shape
     audio_array = audio_array.astype('float64')  # Cast to the image type
