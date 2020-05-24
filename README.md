@@ -28,6 +28,7 @@ Just run it like this:
 
 ```python
 weird_converter.audio_to_image('audio.wav')  # It only supports wav files, for now.
+weird_converter.image_to_audio('image.jpg')
 ```
 
 ## Future development
