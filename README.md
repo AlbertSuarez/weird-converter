@@ -12,7 +12,7 @@
 [![GitHub forks](https://img.shields.io/github/forks/AlbertSuarez/weird-converter.svg)](https://GitHub.com/AlbertSuarez/weird-converter/network/)
 [![GitHub contributors](https://img.shields.io/github/contributors/AlbertSuarez/weird-converter.svg)](https://GitHub.com/AlbertSuarez/weird-converter/graphs/contributors/)
 
-🔀 Strange combinations converter like from Audio to Image
+🔀 Strange combinations converter like from Audio to Image and Image to Audio
 
 ## Installation
 
@@ -33,8 +33,8 @@ weird_converter.audio_to_image('audio.wav')  # It only supports wav files, for n
 ## Future development
 
 * 🎶 Support other input audio types.
-* 📷 Implement image to audio conversion.
 * 📹 Implement audio to video conversion (and the same other way around).
+* ⭐️ Implement custom transformations for getting different results.
 
 ## Results
 
@@ -43,14 +43,28 @@ weird_converter.audio_to_image('audio.wav')  # It only supports wav files, for n
 From this [fanfare audio](https://raw.githubusercontent.com/AlbertSuarez/weird-converter/master/examples/from_audio/fanfare.wav) to this image:
 
 <p align="center">
-  <img alt="Fanfare image" src="https://raw.githubusercontent.com/AlbertSuarez/weird-converter/master/examples/from_audio/fanfare.png" width="30%"/>
+  <img alt="Fanfare image" src="https://raw.githubusercontent.com/AlbertSuarez/weird-converter/master/examples/from_audio/fanfare.jpg" width="30%"/>
 </p>
 
 Or from this [empty audio](https://raw.githubusercontent.com/AlbertSuarez/weird-converter/master/examples/from_audio/silent.wav), representing a silence, to this image:
 
 <p align="center">
-  <img alt="Silent image" src="https://raw.githubusercontent.com/AlbertSuarez/weird-converter/master/examples/from_audio/silent.png" width="30%"/>
+  <img alt="Silent image" src="https://raw.githubusercontent.com/AlbertSuarez/weird-converter/master/examples/from_audio/silent.jpg" width="30%"/>
 </p>
+
+### Image to Audio
+
+<p align="center">
+  <img alt="Church image" src="https://raw.githubusercontent.com/AlbertSuarez/weird-converter/master/examples/from_image/church.jpg" width="30%"/>
+</p>
+
+To this [audio](https://raw.githubusercontent.com/AlbertSuarez/weird-converter/master/examples/from_image/church.wav).
+
+<p align="center">
+  <img alt="Black image" src="https://raw.githubusercontent.com/AlbertSuarez/weird-converter/master/examples/from_image/black.jpg" width="30%"/>
+</p>
+
+To this near empty [audio](https://raw.githubusercontent.com/AlbertSuarez/weird-converter/master/examples/from_image/black.wav).
 
 ## Development
 
