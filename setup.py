@@ -6,7 +6,7 @@ with open('README.md', 'r') as readme_file:
 
 setuptools.setup(
     name='weird-converter',
-    version='0.1',
+    version='0.2',
     author='AlbertSuarez',
     author_email='alsumo95@gmail.com',
     description='Strange combinations converter',
@@ -25,5 +25,5 @@ setuptools.setup(
         'Programming Language :: Python :: 3',
         'Operating System :: OS Independent',
     ],
-    keywords='converter audio image audio-to-image',
+    keywords='converter audio image audio-to-image image-to-audio',
 )
