@@ -58,6 +58,7 @@ Or from this [empty audio](https://raw.githubusercontent.com/AlbertSuarez/weird-
 <p align="center">
   <img alt="Silent image" src="https://raw.githubusercontent.com/AlbertSuarez/weird-converter/master/examples/from_audio/silent.jpg" width="30%"/>
 </p>
+
 ### Image to Audio
 
 Audio generation comes from a normalization to a 44,100 samples per second audio. The output length will be higher depending on the dimensions of the input image. As you could check, the results look very similar to an helicopter sound but it differs depending on the given image.
