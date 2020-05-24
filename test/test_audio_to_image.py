@@ -5,7 +5,7 @@ from weird_converter import audio_to_image
 from weird_converter.config import TEST_FOLDER_EXAMPLES, TEST_FOLDER_AUDIO, TEST_FILE_AUDIO_LIST
 
 
-class ConverterAudioTest(unittest.TestCase):
+class AudioToImageTest(unittest.TestCase):
 
     def setUp(self):
         self.input_file_path_list: list = [
