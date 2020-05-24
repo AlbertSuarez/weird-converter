@@ -7,6 +7,7 @@
 <br>
 [![HitCount](http://hits.dwyl.io/AlbertSuarez/weird-converter.svg)](http://hits.dwyl.io/AlbertSuarez/weird-converter)
 ![Python package](https://github.com/AlbertSuarez/weird-converter/workflows/Python%20package/badge.svg)
+[![codecov](https://codecov.io/gh/AlbertSuarez/weird-converter/branch/master/graph/badge.svg)](https://codecov.io/gh/AlbertSuarez/weird-converter)
 [![GitHub stars](https://img.shields.io/github/stars/AlbertSuarez/weird-converter.svg)](https://GitHub.com/AlbertSuarez/weird-converter/stargazers/)
 [![GitHub forks](https://img.shields.io/github/forks/AlbertSuarez/weird-converter.svg)](https://GitHub.com/AlbertSuarez/weird-converter/network/)
 [![GitHub contributors](https://img.shields.io/github/contributors/AlbertSuarez/weird-converter.svg)](https://GitHub.com/AlbertSuarez/weird-converter/graphs/contributors/)
