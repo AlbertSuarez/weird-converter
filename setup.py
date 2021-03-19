@@ -17,7 +17,7 @@ setuptools.setup(
     packages=['weird_converter'],
     install_requires=[
         'numpy==1.18.4',
-        'Pillow==7.1.2',
+        'Pillow==8.1.1',
         'scipy==1.4.1'
     ],
     zip_safe=False,
