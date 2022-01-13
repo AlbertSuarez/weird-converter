@@ -16,7 +16,7 @@ setuptools.setup(
     license='Apache-2.0',
     packages=['weird_converter'],
     install_requires=[
-        'numpy==1.18.4',
+        'numpy==1.21.0',
         'Pillow==9.0.0',
         'scipy==1.4.1'
     ],
